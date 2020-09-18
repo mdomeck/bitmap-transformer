@@ -1,7 +1,6 @@
 # bitmap-transformer
 <!-- Short summary or background information -->
 Reads a bitmap in from disk and transforms the image writing it out to a new file
-## Challenge
 Manipulating binary data
 Load an image that can be transformed in several ways
 
@@ -9,5 +8,3 @@ Load an image that can be transformed in several ways
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Invert image, created a constructor function to pass in the image file with height and width
 
-## Solution
-<!-- Embedded whiteboard image -->
