@@ -4,6 +4,8 @@
 package bitmap.transformer;
 
 import java.awt.image.BufferedImage;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 import java.util.Scanner;
 
 public class App {
@@ -20,8 +22,25 @@ public class App {
             }
         }
     }
-
-
-
-
 }
+
+
+
+    public static void main(String[] args){
+        for(String args : args){
+            System.out.println(arg)
+        }
+        Path imagePath = FileSystems.getDefault().getPath("resources", "img.bmp");
+        Bitmap bmp = new Bitmap(imagePath);
+        if(args[0].equals("flip")){
+            System.out.println("we are going to flip bitmap");
+            bmp.flipVertically();
+        }else if(args[0].equals("grey out"){
+            System.out.println("lets greyifiy");
+            bmp.grayscale();
+        }else {
+            System.out.println("I acan only flip bitmaps right now");
+
+        }
+    }
+
